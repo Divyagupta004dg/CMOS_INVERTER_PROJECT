@@ -68,4 +68,8 @@ CMOS_inverter/
 | ![Sky130 PDK](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/SkyWater_Technology_logo.svg/120px-SkyWater_Technology_logo.svg.png) **Sky130 PDK** | Foundry models, technology files | Installed via `volare` or OpenLane |
 
 
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/cf06a925-a60f-4a44-b5de-a98ad5045a44" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/bd83078b-ee81-44f8-8426-27fc66f31d2d" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/7354ba5a-c29f-4c08-a9aa-5ef0b68736fb" />
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/45ec7666-9bdb-423b-a211-f8a0fadce14a" />
 
