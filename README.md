@@ -67,9 +67,51 @@ CMOS_inverter/
 
 | ![Sky130 PDK](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/SkyWater_Technology_logo.svg/120px-SkyWater_Technology_logo.svg.png) **Sky130 PDK** | Foundry models, technology files | Installed via `volare` or OpenLane |
 
+<img width="1211" height="376" alt="Image" src="https://github.com/user-attachments/assets/e83e4c45-0958-4e93-aa0c-2ad946b9e9d9" />
+<img width="1218" height="265" alt="Image" src="https://github.com/user-attachments/assets/fefdc828-c29b-4ce0-b5e1-31e9b82f43db" />
 
-<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/cf06a925-a60f-4a44-b5de-a98ad5045a44" />
+## 1. DC Analysis (Voltage Transfer Characteristics - VTC)
+
+In DC analysis, the input voltage (Vin) is swept slowly from 0V to 1.8V, while observing the output voltage
+(Vout).
+
+What we do:
+
+- Use '.dc Vin 0 1.8 0.01' command in the SPICE control block.
+- 
+- Plot the resulting VTC curve: Vout vs Vin.
+- 
+What we find:
+
+- Voltage Transfer Characteristics (VTC)
+
+- Switching Threshold Voltage (VM): The point where Vout = Vin
+
+- VOH (Output High) and VOL (Output Low)
+
+- VIH and VIL (Input thresholds)
+ 
+- Noise Margins:
+
+- NMH = VOH - VIH
+
+- NML = VIL - VOL
+
+- Transfer Gain: Steepest slope of VTC near VM (dVout/dVin)
+
+Unique Points:
+
+- Gain analysis adds insight into signal integrity.
+
+- Noise margin extraction provides robustness data.
+
+- These are critical for standard cell characterization.
+
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/bf68dbaf-a26e-4ec6-b6ec-2a7eafbaf5bb" />
+
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/bd83078b-ee81-44f8-8426-27fc66f31d2d" />
+
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/7354ba5a-c29f-4c08-a9aa-5ef0b68736fb" />
+
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/45ec7666-9bdb-423b-a211-f8a0fadce14a" />
 
