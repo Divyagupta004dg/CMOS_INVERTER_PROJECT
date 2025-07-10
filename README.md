@@ -23,7 +23,9 @@ All simulations are performed using Sky130 PDK’s native transistor models (sky
 .tran	Time-based waveform of Vin/Vout	tPHL, tPLH, trise, tfall, avg_power((matrices extracted)
 
 ## OVERVIEW
+
 CMOS_inverter/
+
 ├── inverter_tb.sch                   # Xschem schematic of CMOS inverter + testbench
 
 ├── plots/                            # All simulation result visuals
@@ -46,6 +48,7 @@ CMOS_inverter/
 │   └── all_measures_terminal.png     # Screenshot of all .measure results
 
 ├── README.md                         # Project description and plots (step-by-step added)
+
 
 
  ## All Tools Used in This Project
