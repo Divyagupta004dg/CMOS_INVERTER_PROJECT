@@ -26,7 +26,7 @@ All simulations are performed using Sky130 PDK’s native transistor models (sky
 
 CMOS_inverter/
 
-├── inverter_tb.sch                   # Xschem schematic of CMOS inverter + testbench
+├── inverter_tb.sch                                                # Xschem schematic of CMOS inverter + testbench
 
 ├── plots/                            # All simulation result visuals
 
@@ -68,6 +68,7 @@ CMOS_inverter/
 | ![Sky130 PDK](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/SkyWater_Technology_logo.svg/120px-SkyWater_Technology_logo.svg.png) **Sky130 PDK** | Foundry models, technology files | Installed via `volare` or OpenLane |
 
 <img width="1211" height="376" alt="Image" src="https://github.com/user-attachments/assets/e83e4c45-0958-4e93-aa0c-2ad946b9e9d9" />
+
 <img width="1218" height="265" alt="Image" src="https://github.com/user-attachments/assets/fefdc828-c29b-4ce0-b5e1-31e9b82f43db" />
 
 COMMANDS
@@ -134,3 +135,43 @@ Unique Points:
 
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/45ec7666-9bdb-423b-a211-f8a0fadce14a" />
 
+## 1. VTC CURVE GRAPH
+
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/20532a0f-5e34-41b1-ab5a-8a9633b94823" />
+
+<img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/5d7ca86e-942f-4021-a320-c39f87183379" />
+
+## 2.SWITCHING THRESHOLD
+
+CMOS Inverter Characterization Report
+======================================
+
+Library:       Sky130A (via Volare)
+
+Supply Voltage: VDD = 1.8V
+
+DC Sweep Analysis (VTC)
+------------------------
+
+Sweep Range:     Vin = 0V to 1.8V
+
+Step Size:       0.01V
+
+ Switching Threshold (Vth):
+ 
+Vin ≈ 0.68 V (where |Vin - Vout| is minimum)
+
+Note:
+
+- Computed manually from exported VTC data
+
+- Threshold may slightly vary with finer step sizes
+
+Transient, Rise/Fall delay, Power, Noise Margin
+
+> To be added after .tran simulation!
+
+
+<img width="839" height="522" alt="Image" src="https://github.com/user-attachments/assets/40de917b-2bd9-48a0-bcdb-42e304b44d0c" />
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1def8a5d-f713-479f-9e25-f3cefb63f05c" />
