@@ -1,0 +1,20 @@
+COMMAND
+awk '{
+  vin = $1; vout = $4;
+  diff = vin - vout;
+  if (diff < 0) diff = -diff;
+  printf "%-10.2f %-10.2f %-15.2f\n", vin, vout, diff;
+}' vtc_data.txt
+
+DATA
+Vin (V)     Vout (V)    |Vin - Vout| (V)
+-----------------------------------------
+0.00        1.80         1.80
+0.10        1.80         1.70
+0.20        1.80         1.60
+...
+0.66        0.70         0.04
+0.68        0.69         0.01   <-- Minimum
+0.70        0.66         0.04
+...
+1.80        0.00         1.80
