@@ -209,7 +209,8 @@ Then:
     NMH ≈ 1.8 – 1.1 = 0.7 V
 
     NML ≈ 0.55 – 0 = 0.55 V
-
+    
+##  PLOTTED
 
     <img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
 
