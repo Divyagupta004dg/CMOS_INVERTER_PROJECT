@@ -212,5 +212,5 @@ Then:
     
 ##  PLOTTED
 
-    <img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
+<img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
 
