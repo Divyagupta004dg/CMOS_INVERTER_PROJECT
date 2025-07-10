@@ -175,3 +175,41 @@ Transient, Rise/Fall delay, Power, Noise Margin
 <img width="839" height="522" alt="Image" src="https://github.com/user-attachments/assets/40de917b-2bd9-48a0-bcdb-42e304b44d0c" />
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1def8a5d-f713-479f-9e25-f3cefb63f05c" />
+
+## NOISE MARGIN
+
+   1  VOH: Max output voltage (≈ VDD)
+
+   2  VOL: Min output voltage (≈ 0V)
+
+   3  VIL: Vin where dVout/dVin = –1 on falling part
+
+   4  VIH: Vin where dVout/dVin = –1 on rising part
+
+We can estimate visually from VTC graph (manually), or numerically (advanced derivative + awk/GNUPlot).
+
+Noise Margins:
+
+    NMH = VOH – VIH
+
+    NML = VIL – VOL
+
+Example (from graph):
+
+    VOH = 1.8V
+
+    VOL = 0V
+
+    VIH ≈ 1.1V
+
+    VIL ≈ 0.55V
+
+Then:
+
+    NMH ≈ 1.8 – 1.1 = 0.7 V
+
+    NML ≈ 0.55 – 0 = 0.55 V
+
+
+    <img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
+
