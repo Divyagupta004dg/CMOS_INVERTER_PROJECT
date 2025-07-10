@@ -70,6 +70,25 @@ CMOS_inverter/
 <img width="1211" height="376" alt="Image" src="https://github.com/user-attachments/assets/e83e4c45-0958-4e93-aa0c-2ad946b9e9d9" />
 <img width="1218" height="265" alt="Image" src="https://github.com/user-attachments/assets/fefdc828-c29b-4ce0-b5e1-31e9b82f43db" />
 
+COMMANDS
+1. cd ~/inverter_project
+   
+2. git clone https://github.com/D-curs-D/Inverter-design-and-analysis-using-sky130pdk.git
+cd Inverter-design-and-analysis-using-sky130pdk
+
+3. mkdir -p ~/sky130_pdk/sky130_fd_pr
+   
+cd ~/sky130_pdk
+
+git clone https://github.com/google/skywater-pdk.git
+
+cd skywater-pdk
+
+git checkout main
+
+4. xschem
+
+
 ## 1. DC Analysis (Voltage Transfer Characteristics - VTC)
 
 In DC analysis, the input voltage (Vin) is swept slowly from 0V to 1.8V, while observing the output voltage
