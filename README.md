@@ -18,9 +18,9 @@ The CMOS inverter serves as a fundamental building block in digital logic design
 
 All simulations are performed using Sky130 PDK’s native transistor models (sky130_fd_pr__nfet_01v8, sky130_fd_pr__pfet_01v8) with 1.8V standard CMOS operation.
 
-.dc sweep	VTC curve, VM, noise margins  , VM, NMH, NML(matrices extracted)
+**.dc sweep** VTC curve, VM, noise margins  , VM, NMH, NML(matrices extracted)
 
-.tran	Time-based waveform of Vin/Vout	tPHL, tPLH, trise, tfall, avg_power((matrices extracted)
+**.tran**	Time-based waveform of Vin/Vout	tPHL, tPLH, trise, tfall, avg_power((matrices extracted)
 
 ## OVERVIEW
 
@@ -29,7 +29,6 @@ CMOS_inverter/
 ├── inverter_tb.sch                   # Xschem schematic of CMOS inverter + testbench
 
 ├── plots/                            # All simulation result visuals
-
 
 │   ├── inverter_schematic.png        # Snapshot of schematic from Xschem
 
