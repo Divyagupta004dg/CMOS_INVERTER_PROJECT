@@ -303,7 +303,45 @@ This shows PMOS drain-to-source voltage, and it will look like the VTC shifted d
     Y-axis: Vds_p from 0 to -1.8 V (since PMOS has negative Vds)
 
 🟧 Triode	PMOS is ON but Vds_p is small	Acts like resistor
+
 🟩 Saturation	PMOS is ON and Vds_p is large enough	Acts like current source
+
 🟨 Cutoff	PMOS is OFF (`Vsg_p <Vth)
 
+WHY this curve is imp 
+
+ON/OFF detection - Confirms when NMOS turns on
+
+Debugging - Detects grounding/netlist mistakes
+
+Region boundaries - Helps mark cutoff, sat, triode
+
+Foundation - Used in deeper analog/transistor-level design
+
+Validates inverter switching logic - Matches VTC behavior properly
+
+## III) Vgs_n vs Vin
+
+    NMOS gate-to-source voltage vs input voltage
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b7d86fe7-3a8a-4364-8f06-7f8a391bef49" />
+
+<img width="1979" height="1180" alt="image" src="https://github.com/user-attachments/assets/fee9c4ae-793c-4a9a-b9db-88b371de5f59" />
+
+🟨 Cutoff	Vgs_n < Vth (0.45 V)	NMOS is OFF – no current
+
+🟩 Saturation	Vgs_n > Vth and Vds > Vgs - Vth	NMOS is ON, behaves like current source
+
+🟧 Triode	Vgs_n > Vth and Vds < Vgs - Vth	NMOS is ON, behaves like a resistor
+
+Why this plot is important:
+
+    1 It confirms when NMOS enters active regions.
+
+    2 Helps verify threshold behavior and ON/OFF transition.
+
+    3 Useful for debugging incorrect inverter behavior.
+
+
+<img width="732" height="576" alt="image" src="https://github.com/user-attachments/assets/8a7e2544-6ebd-432d-8c8e-5c96ca4ceb7f" />
 
