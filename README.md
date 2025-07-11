@@ -234,11 +234,12 @@ Graph	Looks Like	Why
 
 **`** Vds_n vs Vin	|   Same as VTC	    |       Vds_n = Vout, drops from VDD to 0 as Vin increases
 
+**`** Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
+
 **`** Vgs_n vs Vin	| Straight diagonal	|       Vgs_n = Vin, because gate is driven by Vin and source is 0 V
 
 **`**  Vgs_p vs Vin	|Straight, decreasing|      Vgs_p = Vin - VDD, so it's a straight line from -1.8 V to 0 V
 
-**`** Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
 
 ## I) Vgs_n and Vds_n Curve (NMOS internal voltages) OR Vds_n vs vin plot
 
@@ -290,6 +291,8 @@ We want to plot:
     Vds_p = Vout - VDD vs Vin
 
 This shows PMOS drain-to-source voltage, and it will look like the VTC shifted downward by 1.8 V.
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/7a3aa2a8-2b16-4b39-8d50-e8b667157ccb" />
 
 <img width="1979" height="1180" alt="image" src="https://github.com/user-attachments/assets/791a8985-6efa-454d-848f-694b1b241166" />
 
