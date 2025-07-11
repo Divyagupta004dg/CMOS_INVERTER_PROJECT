@@ -365,3 +365,14 @@ Designers use this graph to:
     Confirm that your SPICE simulation or netlist is correct
 
     Analyze behavior when creating custom logic gates or sizing transistors
+
+ ##   Drain Current (Id) of NMOS and PMOS
+
+    Id_n vs Vin
+
+    Id_p vs Vin
+
+➡ Useful to see conduction levels and where both are ON (short-circuit).
+
+# I) Id_n vs Vin
+
