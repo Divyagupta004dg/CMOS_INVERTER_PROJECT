@@ -92,6 +92,15 @@ git checkout main
 
 ## 1. DC Analysis (Voltage Transfer Characteristics - VTC)
 
+dc directory
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.dc Vin 0 1.8 0.01
+.save all
+.options savecurrents
+.end
+
 In DC analysis, the input voltage (Vin) is swept slowly from 0V to 1.8V, while observing the output voltage
 (Vout).
 
@@ -136,6 +145,8 @@ Unique Points:
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/45ec7666-9bdb-423b-a211-f8a0fadce14a" />
 
 ## 1. VTC CURVE GRAPH
+
+ngspice inverter_test.spice
 
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/20532a0f-5e34-41b1-ab5a-8a9633b94823" />
 
