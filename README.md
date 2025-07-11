@@ -230,17 +230,16 @@ Then:
 
 we can probe transistor internal voltages to study operation regions:
 
-    Vgs_n vs Vin
+Graph	Looks Like	Why
+🔵 Vds_n vs Vin	|   Same as VTC	    |       Vds_n = Vout, drops from VDD to 0 as Vin increases
 
-    Vds_n vs Vin
+🔴 Vgs_n vs Vin	| Straight diagonal	|       Vgs_n = Vin, because gate is driven by Vin and source is 0 V
 
-    Vgs_p vs Vin
+🟢 Vgs_p vs Vin	|Straight, decreasing|      Vgs_p = Vin - VDD, so it's a straight line from -1.8 V to 0 V
 
-    Vds_p vs Vin
+🟣 Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
 
-➡Helps in identifying cutoff, triode, saturation regions.
-
-## 1. Vgs_n and Vds_n Curve (NMOS internal voltages) 
+## I) Vgs_n and Vds_n Curve (NMOS internal voltages) 
 
 VTC = inverter behavior
 
@@ -261,3 +260,23 @@ plot looks similarr
 ## Vds_n vs Vin	Same as VTC	Vds_n = Vout, drops from VDD to 0 as Vin increases
 
 <img width="1979" height="1180" alt="image" src="https://github.com/user-attachments/assets/0b2cda9a-f2ce-4ff6-9c17-9fc7b42e943f" />
+
+Region	Color	Description
+
+🟡 Cutoff	Yellow	Vgs < Vth — NMOS OFF, no current
+
+🟢 Saturation	Green	Vgs > Vth and Vds > Vgs - Vth — NMOS is ON and behaves like a current source
+
+🟠 Triode	Orange	Vgs > Vth and Vds < Vgs - Vth — NMOS ON and acts like a resistor
+
+Curve Details:
+
+    🔴 Red Line: Vgs_n = Vin
+
+    🔵 Blue Line: Vds_n = Vout
+
+    ⚫ Dashed Line: Vth = 0.45 V
+
+    Helps understand when NMOS turns on, and how it moves from:
+
+    Cutoff ➡ Saturation ➡ Triode
