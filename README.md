@@ -231,13 +231,13 @@ Then:
 we can probe transistor internal voltages to study operation regions:
 
 Graph	Looks Like	Why
-🔵 Vds_n vs Vin	|   Same as VTC	    |       Vds_n = Vout, drops from VDD to 0 as Vin increases
+**`** Vds_n vs Vin	|   Same as VTC	    |       Vds_n = Vout, drops from VDD to 0 as Vin increases
 
-🔴 Vgs_n vs Vin	| Straight diagonal	|       Vgs_n = Vin, because gate is driven by Vin and source is 0 V
+**`** Vgs_n vs Vin	| Straight diagonal	|       Vgs_n = Vin, because gate is driven by Vin and source is 0 V
 
-🟢 Vgs_p vs Vin	|Straight, decreasing|      Vgs_p = Vin - VDD, so it's a straight line from -1.8 V to 0 V
+**`**  Vgs_p vs Vin	|Straight, decreasing|      Vgs_p = Vin - VDD, so it's a straight line from -1.8 V to 0 V
 
-🟣 Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
+**`** Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
 
 ## I) Vgs_n and Vds_n Curve (NMOS internal voltages) 
 
@@ -280,3 +280,12 @@ Curve Details:
     Helps understand when NMOS turns on, and how it moves from:
 
     Cutoff ➡ Saturation ➡ Triode
+
+
+## II) Vds_p vs Vin Plot
+
+We want to plot:
+
+    Vds_p = Vout - VDD vs Vin
+
+This shows PMOS drain-to-source voltage, and it will look like the VTC shifted downward by 1.8 V.
