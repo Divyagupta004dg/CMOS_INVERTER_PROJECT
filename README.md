@@ -342,6 +342,26 @@ Why this plot is important:
 
     3 Useful for debugging incorrect inverter behavior.
 
+## IV) Vgs_p vs Vin
 
 <img width="732" height="576" alt="image" src="https://github.com/user-attachments/assets/8a7e2544-6ebd-432d-8c8e-5c96ca4ceb7f" />
 
+Interpretation:
+
+    When Vin = 0 V:
+    
+    → Vgs_p = 0 – 1.8 = –1.8 V ⇒ PMOS strongly ON
+
+    When Vin = 1.8 V:
+    
+    → Vgs_p = 1.8 – 1.8 = 0 V ⇒ PMOS completely OFF
+
+    So this plot visually confirms the turning OFF point of PMOS as Vin ↑
+
+Designers use this graph to:
+
+    Predict when PMOS starts conducting
+
+    Confirm that your SPICE simulation or netlist is correct
+
+    Analyze behavior when creating custom logic gates or sizing transistors
