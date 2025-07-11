@@ -1,0 +1,29 @@
+  GNU nano 7.2                                            inv.spice                                                     
+Vin in 0 DC 0
+
+* PMOS: drain gate source body
+XPMOS out in vdd vdd sky130_fd_pr__pfet_01v8
+
+* NMOS: drain gate source body
+XNMOS out in 0 0 sky130_fd_pr__nfet_01v8
+
+* Sweep Vin from 0V to 1.8V in 10mV steps
+.dc Vin 0 1.8 0.01
+
+* Save node voltages
+.save all
+
+.control
+run
+
+* Vgs_n = v(in), Vds_n = v(out)
+plot v(in) v(out)
+
+* Optional: calculate Vgs - Vth (to check region of operation)
+* .func VgsMinusVth {v(in)-0.45}
+* plot v(out) VgsMinusVth
+
+.endc
+
+.end
+
