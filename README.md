@@ -187,7 +187,7 @@ Transient, Rise/Fall delay, Power, Noise Margin
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/1def8a5d-f713-479f-9e25-f3cefb63f05c" />
 
-## NOISE MARGIN
+## 3. NOISE MARGIN
 
    1  VOH: Max output voltage (≈ VDD)
 
@@ -225,3 +225,39 @@ Then:
 
 <img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
 
+
+## 4. Vgs and Vds of NMOS and PMOS
+
+we can probe transistor internal voltages to study operation regions:
+
+    Vgs_n vs Vin
+
+    Vds_n vs Vin
+
+    Vgs_p vs Vin
+
+    Vds_p vs Vin
+
+➡Helps in identifying cutoff, triode, saturation regions.
+
+## 1. Vgs_n and Vds_n Curve (NMOS internal voltages) 
+
+VTC = inverter behavior
+
+Used to calculate logic performance (noise margins, VM)
+
+Vgs_n / Vds_n = transistor behavior
+
+Used to determine NMOS operating regions:
+
+    Cutoff
+
+    Saturation
+
+    Triode
+
+plot looks similarr
+
+## Vds_n vs Vin	Same as VTC	Vds_n = Vout, drops from VDD to 0 as Vin increases
+
+<img width="1979" height="1180" alt="image" src="https://github.com/user-attachments/assets/0b2cda9a-f2ce-4ff6-9c17-9fc7b42e943f" />
