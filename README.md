@@ -226,11 +226,12 @@ Then:
 <img width="690" height="454" alt="image" src="https://github.com/user-attachments/assets/11693fde-5299-4e34-a235-31540aa03734" />
 
 
-## 4. Vgs and Vds of NMOS and PMOS
+## 4. Vgs and Vds of NMOS and PMOS OR Vdsn vs vin plot
 
 we can probe transistor internal voltages to study operation regions:
 
 Graph	Looks Like	Why
+
 **`** Vds_n vs Vin	|   Same as VTC	    |       Vds_n = Vout, drops from VDD to 0 as Vin increases
 
 **`** Vgs_n vs Vin	| Straight diagonal	|       Vgs_n = Vin, because gate is driven by Vin and source is 0 V
@@ -239,7 +240,7 @@ Graph	Looks Like	Why
 
 **`** Vds_p vs Vin	|Same as VTC but inverted|  Vds_p = Vout - VDD → looks like Vout shifted downward by VDD.
 
-## I) Vgs_n and Vds_n Curve (NMOS internal voltages) 
+## I) Vgs_n and Vds_n Curve (NMOS internal voltages) OR Vds_n vs vin plot
 
 VTC = inverter behavior
 
@@ -289,3 +290,17 @@ We want to plot:
     Vds_p = Vout - VDD vs Vin
 
 This shows PMOS drain-to-source voltage, and it will look like the VTC shifted downward by 1.8 V.
+
+<img width="1979" height="1180" alt="image" src="https://github.com/user-attachments/assets/791a8985-6efa-454d-848f-694b1b241166" />
+
+    Purple line: Vds_p = Vout - VDD
+
+    X-axis: Vin from 0 V to 1.8 V
+
+    Y-axis: Vds_p from 0 to -1.8 V (since PMOS has negative Vds)
+
+🟧 Triode	PMOS is ON but Vds_p is small	Acts like resistor
+🟩 Saturation	PMOS is ON and Vds_p is large enough	Acts like current source
+🟨 Cutoff	PMOS is OFF (`Vsg_p <Vth)
+
+
