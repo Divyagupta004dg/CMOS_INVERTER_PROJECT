@@ -1,0 +1,28 @@
+* CMOS Inverter DC Analysis - Vgs_n vs Vin
+
+.lib /home/divya/pdk/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+* Power Supply
+VDD vdd 0 DC 1.8
+
+* Input Voltage Source (swept in DC analysis)
+Vin in 0 DC 0
+
+* Transistors (subckt instances)
+XPMOS out in vdd vdd sky130_fd_pr__pfet_01v8
+XNMOS out in 0 0 sky130_fd_pr__nfet_01v8
+
+* DC Sweep of input voltage
+.dc Vin 0 1.8 0.01
+
+* Save all voltages
+.save all
+
+.control
+run
+
+* Vgs_n = V(in) - V(source) = V(in) - 0 = V(in)
+plot v(in)
+.endc
+
+.end
