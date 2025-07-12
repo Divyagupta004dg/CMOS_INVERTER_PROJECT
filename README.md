@@ -406,3 +406,25 @@ High Vin	> 1.0 V	PMOS is OFF, Id_p ≈ 0
  3  Design Optimization:
  
     Engineers use this to minimize overlap conduction, thereby reducing short-circuit power in fast-switching CMOS circuits.
+
+ ## II) STATIC POWER CONSUMPTION
+
+ <img width="732" height="576" alt="image" src="https://github.com/user-attachments/assets/37729474-fd31-466b-af34-9dfde04e2e42" />
+
+ X-axis (v(in)): Input voltage to the inverter (swept from 0 V to 1.8 V)
+
+Y-axis (i(VDD)): Current drawn from the supply VDD (negative sign means supply is sourcing current)
+
+**High static power around switching point indicates short-circuit current → important for:**
+
+    Power optimization
+
+    CMOS inverter design
+
+    Low-power VLSI
+    
+    CMOS Static Power Consumption Behavior:
+
+<img width="706" height="165" alt="image" src="https://github.com/user-attachments/assets/387b9ec9-65dc-4e90-8073-e2333812e33c" />
+
+So, max static current occurs when both transistors are partially ON, i.e. during transition region near VM ≈ VDD/2.
