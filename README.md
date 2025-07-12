@@ -156,6 +156,9 @@ ngspice inverter_test.spice
 
 This multi-VDD VTC plot shows how the inverter output response changes with supply voltage.
 
+<img width="732" height="576" alt="Image" src="https://github.com/user-attachments/assets/0c5fd435-a9a7-4ef3-8b64-17f7887bbbb7" />
+
+<img width="689" height="244" alt="image" src="https://github.com/user-attachments/assets/f5ce62ee-8318-4235-8fbb-fb79ec1d15b3" />
 
 we Can Now Extract:
 
