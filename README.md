@@ -152,6 +152,26 @@ ngspice inverter_test.spice
 
 <img width="1280" height="800" alt="Image" src="https://github.com/user-attachments/assets/5d7ca86e-942f-4021-a320-c39f87183379" />
 
+<img width="1580" height="980" alt="image" src="https://github.com/user-attachments/assets/5df2575b-6fd6-49d1-a295-b3a9469f3f2f" />
+
+we Can Now Extract:
+
+    Switching Threshold (VM): Where Vout = Vin (center of transition region, around 0.9 V).
+
+    Noise Margins:
+
+        NMH = VOH − VIH
+
+        NML = VIL − VOL
+
+    Region behavior:
+
+        Vin < VIL: PMOS on, NMOS off → Vout ≈ VDD
+
+        Vin > VIH: NMOS on, PMOS off → Vout ≈ 0
+
+        VIL < Vin < VIH: Both partially on (short circuit path)
+
 ## 2.SWITCHING THRESHOLD
 
 CMOS Inverter Characterization Report
