@@ -154,6 +154,9 @@ ngspice inverter_test.spice
 
 <img width="1580" height="980" alt="image" src="https://github.com/user-attachments/assets/5df2575b-6fd6-49d1-a295-b3a9469f3f2f" />
 
+This multi-VDD VTC plot shows how the inverter output response changes with supply voltage.
+
+
 we Can Now Extract:
 
     Switching Threshold (VM): Where Vout = Vin (center of transition region, around 0.9 V).
