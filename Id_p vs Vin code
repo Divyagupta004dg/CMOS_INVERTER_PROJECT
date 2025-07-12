@@ -1,0 +1,21 @@
+* CMOS Inverter – Id_p vs Vin
+
+.lib /home/divya/pdk/volare/sky130/versions/bdc9412b3e468c102d01b7cf6337be06ec6e9c9a/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+* Supply and input
+Vdd vdd 0 1.8
+Vin in  0 DC 0
+
+* Transistors (no curly braces, no params)
+M1 out in vdd vdd sky130_fd_pr__pfet_01v8 l=0.15u w=0.84u
+M2 out in  0   0   sky130_fd_pr__nfet_01v8 l=0.15u w=0.84u
+
+* Sweep Vin from 0 to 1.8 V
+.dc Vin 0 1.8 0.01
+
+.control
+run
+plot -i(Vdd) vs v(in)
+.endc
+
+.end
