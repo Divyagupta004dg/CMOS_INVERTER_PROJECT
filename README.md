@@ -371,8 +371,38 @@ Designers use this graph to:
     Id_n vs Vin
 
     Id_p vs Vin
-
+    
+    Id_n vs Vin
 ➡ Useful to see conduction levels and where both are ON (short-circuit).
 
-# I) Id_n vs Vin
+## I) Id_p vs Vin
 
+<img width="732" height="576" alt="image" src="https://github.com/user-attachments/assets/7a3be73b-8911-4dff-8bd2-1e199b6fc698" />
+
+It shows the drain current of the PMOS transistor (Id_p) as a function of input voltage (Vin)
+
+X-axis (Vin): Varies from 0 V to 1.8 V.
+
+Y-axis (−I(VDD)): Represents PMOS drain current. Since current enters the PMOS source, -I(VDD) gives the magnitude of current flowing through the PMOS.
+
+**Region	Vin Value	Id_p Behavior**
+
+Low Vin	0 V – ~0.3 V	PMOS is ON fully → Id_p ≈ 0 (Load is pulling down current)
+
+Vin ≈ Vth	~0.5 V – 0.7 V	PMOS & NMOS both conduct → Peak current (both ON = short-circuit path)
+
+High Vin	> 1.0 V	PMOS is OFF, Id_p ≈ 0
+
+**Why This Graph is Important:**
+
+  1  Shows Short-Circuit Current Region:
+  
+    The peak current near Vm (≈ 0.6 V) tells us where both NMOS and PMOS are ON, leading to a direct path from VDD to GND — causing power loss.
+
+  2 Helps Identify Power Dissipation Window:
+  
+    Dynamic power losses are maximum when both transistors conduct. This region (Id_p peak) marks where short-circuit current contributes significantly.
+
+ 3  Design Optimization:
+ 
+    Engineers use this to minimize overlap conduction, thereby reducing short-circuit power in fast-switching CMOS circuits.
