@@ -458,7 +458,57 @@ So, max static current occurs when both transistors are partially ON, i.e. durin
 
 ## 2. TRANSIENT ANALYSIS 
 
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/71dcbbfe-06dd-4551-a2aa-09428059a6ab" />
 
 <img width="1639" height="856" alt="image" src="https://github.com/user-attachments/assets/7fd7a49a-5f3c-4119-ae39-8208a42c10dc" />
+
+Transient Analysis (Dynamic Behavior)
+
+In transient analysis, a pulsed input signal (Vin) is applied to simulate real-time switching behavior.
+
+What we do:
+
+- Use '.tran 10ps 20ns' in the SPICE control block.
+
+- Apply a vpulse signal to Vin.
+  
+- Plot Vin and Vout over time.
+ 
+- tPHL: Propagation delay from high to low
+
+- tPLH: Propagation delay from low to high
+  
+- Rise Time (tr): Time for output to go from 10% to 90%
+
+- Fall Time (tf): Time for output to go from 90% to 10%
+  
+- Output waveform quality
+  
+- Input-Output timing relationship
+  
+Unique Points:
+
+- These delays form the timing backbone of cell libraries.
+  
+- Helps compare different sizing or technology options.
+  
+- Prepares you for STA (Static Timing Analysis) concepts.
+  
+Optional Additions for Uniqueness
+
+- Static Power Consumption: Measure I(VDD) in DC when Vin=0 or 1.8V.
+  
+- Dynamic Power Consumption: Use '.measure tran avg_power AVG I(VDD)*VDD' in transient.
+  
+- Layout Extraction: Create layout in Magic, do DRC & LVS using Netgen.
+  
+- Show cursor-marked waveforms to illustrate tPHL, tPLH, rise/fall
+  
+## 1 PLOT 
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f4a96b4e-82ce-4c39-8b82-5aaced255292" />
+
+<img width="806" height="563" alt="image" src="https://github.com/user-attachments/assets/4d3a98cc-2438-44bc-8c08-9d7eca1c05c7" />
+
 
