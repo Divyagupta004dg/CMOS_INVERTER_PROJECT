@@ -460,3 +460,5 @@ So, max static current occurs when both transistors are partially ON, i.e. durin
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/71dcbbfe-06dd-4551-a2aa-09428059a6ab" />
 
+<img width="1639" height="856" alt="image" src="https://github.com/user-attachments/assets/7fd7a49a-5f3c-4119-ae39-8208a42c10dc" />
+
