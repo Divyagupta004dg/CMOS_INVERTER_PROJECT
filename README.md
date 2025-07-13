@@ -454,3 +454,9 @@ Y-axis (i(VDD)): Current drawn from the supply VDD (negative sign means supply i
 <img width="706" height="165" alt="image" src="https://github.com/user-attachments/assets/387b9ec9-65dc-4e90-8073-e2333812e33c" />
 
 So, max static current occurs when both transistors are partially ON, i.e. during transition region near VM ≈ VDD/2.
+
+
+## 2. TRANSIENT ANALYSIS 
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/71dcbbfe-06dd-4551-a2aa-09428059a6ab" />
+
