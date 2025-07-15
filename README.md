@@ -1,4 +1,4 @@
-# CMOS Inverter Design using Sky130 PDK 
+ # CMOS Inverter Design using Sky130 PDK 
 
 This project demonstrates the complete schematic design, simulation, and characterization of a CMOS inverter using the Sky130 Process Design Kit (Sky130A PDK). The design is implemented and simulated using Xschem for schematic capture and Ngspice for electrical simulation.
 
@@ -518,7 +518,11 @@ Optional Additions for Uniqueness
 ## NMOS IV CHARACTERSTICS
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/dc9f34bf-e7ed-4328-916a-20d31c7071b1" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b01548c9-7ced-4620-b91b-31f007afc800" />
 
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/03335e40-7447-4ff1-b058-8a5c99609df7" /><img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5a0bf53-b5c9-43df-865a-8cbc4e77b9ef" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/66ada735-1d05-4b3b-8581-ed1661bd192d" />
 
 ![Uploading image.png…]()
 
