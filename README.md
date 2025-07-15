@@ -520,10 +520,8 @@ Optional Additions for Uniqueness
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/dc9f34bf-e7ed-4328-916a-20d31c7071b1" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b01548c9-7ced-4620-b91b-31f007afc800" />
 
+magic
 
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/03335e40-7447-4ff1-b058-8a5c99609df7" /><img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/b5a0bf53-b5c9-43df-865a-8cbc4e77b9ef" />
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/66ada735-1d05-4b3b-8581-ed1661bd192d" />
-
-![Uploading image.png…]()
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ab4a19a6-4531-4205-be90-9786bd3d178c" />
 
 
