@@ -512,7 +512,13 @@ Optional Additions for Uniqueness
 <img width="806" height="563" alt="image" src="https://github.com/user-attachments/assets/4d3a98cc-2438-44bc-8c08-9d7eca1c05c7" />
 
 
-<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f892be63-35b7-4d3f-86bc-eac9c8e1e109" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/f892be63-35b7-4d3f-86bc-eac9c8e1e109" 
+
+
+## NMOS IV CHARACTERSTICS
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/dc9f34bf-e7ed-4328-916a-20d31c7071b1" />
+
 
 ![Uploading image.png…]()
 
