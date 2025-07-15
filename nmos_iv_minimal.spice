@@ -1,0 +1,20 @@
+* NMOS IV Curve using manual model
+
+.model mynmos nmos level=1 vto=0.5 kp=120e-6 lambda=0.02
+
+* Sweep Vds from 0 to 1.8V in steps, for multiple Vgs
+Vds drain 0 0
+Vgs gate 0 0
+
+M1 drain gate 0 0 mynmos L=0.15u W=1u
+
+.dc Vds 0 1.8 0.05 Vgs 0 1.8 0.3
+
+.control
+run
+* Plot current through Vds vs Vds for different Vgs values
+setplot dc1
+plot abs(i(Vds))
+.endc
+
+.end
