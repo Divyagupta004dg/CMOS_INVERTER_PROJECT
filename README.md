@@ -554,19 +554,19 @@ Xschem (Schematic) ──→ Netlist
 
 ## STEP-BY-STEP: Create CMOS Inverter Layout in Magic
 
- 1. Start Magic and Load File
+** 1. Start Magic and Load File**
 
 magic inverter.mag
 
-2. Create NWELL Region for PMOS
+**2. Create NWELL Region for PMOS**
 
-    . Create NWELL box (for PMOS region):
+. Create NWELL box (for PMOS region):
 
 box 0 0 20 30
 
 paint nwell
 
-3. Draw Active Regions (N+ and P+ diffusion)
+**3. Draw Active Regions (N+ and P+ diffusion)**
    
 . PMOS diffusion (inside NWELL):
 
@@ -580,13 +580,13 @@ box 2 20 18 24
 
 paint nactive
 
-4. Draw POLY Gate (common gate)
+**4. Draw POLY Gate (common gate)**
 
 box 9 0 11 26
 
 paint poly
 
-5. Add Contacts (poly and diffusion contacts)
+**5. Add Contacts (poly and diffusion contacts)**
 
 . Contact on PMOS diffusion (left drain):
 
@@ -644,22 +644,8 @@ drc check
 **9. Save Your Work**
 
 save inverter.mag
-``
 
-+--------------------+   ← NWELL (PMOS zone)
-|      METAL1 (VDD)  |
-|                    |
-|  P+ Diff + Contact |
-|        |           |
-|       POLY         |
-|        |           |
-|  N+ Diff + Contact |
-|      METAL1 (GND)  |
-+--------------------+
-                       ``
-
-<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/b2929a8a-5553-4497-bfde-651a64d13534" />
-
+<img width="206" height="131" alt="image" src="https://github.com/user-attachments/assets/f34b7634-8132-40db-92b9-bf4250a88ca6" />
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5eaa591f-3512-4222-94f8-133edc394715" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4125a4fe-3614-4417-9067-cdff814d6c4b" />
