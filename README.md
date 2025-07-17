@@ -548,6 +548,118 @@ Xschem (Schematic) ──→ Netlist
                       ▼
                       
                    LVS Check (Netlist vs Layout match)
+                   
+                   
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/b2929a8a-5553-4497-bfde-651a64d13534" />
+
+## STEP-BY-STEP: Create CMOS Inverter Layout in Magic
+
+ 1. Start Magic and Load File
+
+magic inverter.mag
+
+2. Create NWELL Region for PMOS
+
+    . Create NWELL box (for PMOS region):
+
+box 0 0 20 30
+
+paint nwell
+
+3. Draw Active Regions (N+ and P+ diffusion)
+   
+. PMOS diffusion (inside NWELL):
+
+box 2 2 18 6
+
+paint pactive
+
+. NMOS diffusion:
+
+box 2 20 18 24
+
+paint nactive
+
+4. Draw POLY Gate (common gate)
+
+box 9 0 11 26
+
+paint poly
+
+5. Add Contacts (poly and diffusion contacts)
+
+. Contact on PMOS diffusion (left drain):
+
+box 4 2 8 6
+
+paint contact
+
+paint metal1
+
+. Contact on NMOS diffusion (left source):
+
+box 4 20 8 24
+
+paint contact
+
+paint metal1
+
+. Contact on POLY:
+
+box 9 26 11 30
+
+paint polycontact
+
+paint metal1
+
+
+**6. Draw METAL1 for VDD, GND, OUTPUT**
+
+VDD rail (top):
+
+box 0 0 20 2
+paint metal1
+
+GND rail (bottom):
+
+box 0 24 20 26
+paint metal1
+
+Output wire from middle:
+
+box 8 10 12 16
+paint metal1
+
+**7. Add Labels (for simulation ports)**
+
+label vdd metal1 center
+label gnd metal1 center
+label in poly center
+label out metal1 center
+
+**8. Run DRC (Design Rule Check)**
+
+drc check
+
+**9. Save Your Work**
+
+save inverter.mag
+``
+
++--------------------+   ← NWELL (PMOS zone)
+|      METAL1 (VDD)  |
+|                    |
+|  P+ Diff + Contact |
+|        |           |
+|       POLY         |
+|        |           |
+|  N+ Diff + Contact |
+|      METAL1 (GND)  |
++--------------------+
+                       ``
+
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/b2929a8a-5553-4497-bfde-651a64d13534" />
+
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5eaa591f-3512-4222-94f8-133edc394715" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4125a4fe-3614-4417-9067-cdff814d6c4b" />
