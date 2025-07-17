@@ -1,0 +1,16 @@
+* CMOS inverter testbench using extracted layout
+
+.include "inverter.spice"
+
+VDD vdd 0 1.8
+VIN in 0 PULSE(0 1.8 0 1n 1n 5n 10n)
+
+Xinv in out vdd gnd inverter
+
+.control
+tran 0.1n 50n
+run
+plot v(in) v(out)
+.endc
+
+.end
