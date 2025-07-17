@@ -531,3 +531,24 @@ cp inverter.mag inverter_final_backup.mag
 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/2966ec53-b37e-4a59-9d9d-3e9ea9a8534d" />
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ad54475a-b23b-49ad-952d-ed85d562c824" />
+
+inverter design in mGIC
+
+Xschem (Schematic) ──→ Netlist
+
+                      │
+                      ▼
+                   Magic (Layout)
+                   
+                      │
+                      ▼
+                  Extracted Netlist
+                  
+                      │
+                      ▼
+                      
+                   LVS Check (Netlist vs Layout match)
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/5eaa591f-3512-4222-94f8-133edc394715" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/4125a4fe-3614-4417-9067-cdff814d6c4b" />
+
