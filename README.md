@@ -522,6 +522,146 @@ Optional Additions for Uniqueness
 
 magic
 
+## Full CMOS Inverter Design Flow — Step-by-Step with Explanations
+
+**Step 1: Schematic Design (Xschem)**
+
+🎯 What you're doing:
+
+Draw the transistor-level circuit diagram of an inverter (or any CMOS logic).
+
+📄 You create:
+
+    A .sch file (schematic file)
+
+    A schematic netlist = text file describing your circuit using transistor models (e.g., M1 Vout Vin Vdd Vdd pfet_01v8 W=... L=...)
+
+🛠 Tool:
+
+    Xschem (schematic capture)
+
+    SPICE simulator (like ngspice)
+
+✅ Output:
+
+    Schematic Netlist → used for simulation and LVS
+
+🟨 Step 2: Schematic Simulation (optional)
+
+🎯 Why:
+
+To verify that your circuit behavior is correct — like logic inversion, timing, etc.
+
+🛠 Tools:
+
+    Xschem → Netlist → Write SPICE
+
+    Ngspice → Simulate transient/DC response
+
+✅ Output:
+
+    .spice simulation netlist
+
+    Plots like Vin vs Vout (inverter transfer curve)
+
+🟧 Step 3: Layout Design (Magic)
+
+🎯 What you're doing:
+
+Manually draw the physical structure of your inverter using MOSFET layers (n-diff, poly, metal, contacts, etc.).
+
+You are building how the IC will actually be fabricated.
+
+📄 You create:
+
+    .mag file → layout file
+
+🛠 Tool:
+
+    Magic (layout editor)
+
+🟥 Step 4: DRC Check (Design Rule Check)
+
+🎯 Why:
+
+Check if your layout violates any fabrication rules (e.g., poly width, metal spacing)
+
+🛠 Tool:
+
+    Magic → DRC → Check DRC or :drc count
+
+✅ Output:
+
+    If 0 errors → you can continue
+
+    If errors → fix layout
+
+🟦 Step 5: Netlist Extraction (ext2spice)
+
+🎯 What you're doing:
+
+Convert your layout back into a netlist (like the one from schematic), by checking what devices and connections exist in the layout.
+
+This is your Layout Netlist.
+
+📄 You create:
+
+    inverter.spice → layout-generated SPICE netlist
+
+🛠 Tool:
+
+    In Magic:
+
+    extract
+    
+    ext2spice
+
+🟫 Step 6: LVS (Layout vs Schematic)
+
+🎯 Why:
+
+Check if your layout and schematic match. Are all the transistors and wires the same?
+
+This ensures what you built physically is exactly what you intended electrically.
+
+🛠 Tool:
+
+    Netgen
+
+✅ You compare:
+
+    Layout Netlist (from Magic)
+
+    Schematic Netlist (from Xschem)
+
+✅ Output:
+
+    If LVS passes: ✅ ✅ ✅
+
+    If LVS fails: you fix layout or schematic
+
+⬛ Step 7: Export GDS (for fabrication or viewing)
+
+🎯 What you're doing:
+
+Generate a GDSII file — the industry-standard file format used by fabs (like SkyWater) to manufacture your chip.
+
+Also viewable in KLayout.
+
+🛠 Tool:
+
+In Magic:
+
+gds write inverter.gds
+
+📁 Output:
+
+    inverter.gds
+
+ ## SUMMERT TABLE 
+
+ <img width="509" height="266" alt="image" src="https://github.com/user-attachments/assets/d8ea75b9-46bb-41cf-bc4a-5447508145fb" />
+
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ab4a19a6-4531-4205-be90-9786bd3d178c" />
 
 
