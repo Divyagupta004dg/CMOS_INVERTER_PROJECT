@@ -525,3 +525,9 @@ magic
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ab4a19a6-4531-4205-be90-9786bd3d178c" />
 
 
+cp inverter.mag inverter_final_backup.mag
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/a6ee74ce-61a3-490b-a4fe-93e61e6f5327" />
+
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/2966ec53-b37e-4a59-9d9d-3e9ea9a8534d" />
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/ad54475a-b23b-49ad-952d-ed85d562c824" />
